@@ -4253,11 +4253,11 @@
     };
     const da = new DynamicAdapt("max");
     da.init();
-    const menuBurger = document.querySelector(".burger__icon");
-    const menuBody = document.querySelector(".menu__body");
+    const menuBurger = document.querySelector(".icon-menu");
+    const menuBody = document.querySelector(".menu-burger");
     if (menuBurger) menuBurger.addEventListener("click", (function(e) {
-        menuBurger.classList.toggle("_burger-active");
-        if (menuBody) menuBody.classList.toggle("_active-menu");
+        menuBurger.classList.toggle("_burger-active-");
+        if (menuBody) menuBody.classList.toggle("_active-menu-burger");
     }));
     const mobileBodyButton = document.querySelector(".button-product-mobile");
     const mobileBodyBlock = document.querySelector(".catalog-mobile-opacity");
